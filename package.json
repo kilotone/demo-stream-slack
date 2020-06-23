@@ -8,6 +8,10 @@
   },
   "author": "Jeffrey Eggert",
   "license": "MIT",
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/kilotone/demo-stream-slack.git"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
