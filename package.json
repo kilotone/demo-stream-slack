@@ -1,0 +1,19 @@
+{
+  "name": "demo-stream-slack",
+  "version": "1.0.0",
+  "description": "package and deliver stream assets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeffrey Eggert",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kilotone/demo-stream-slack.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-media-server": "^2.1.9"
+  }
+}
