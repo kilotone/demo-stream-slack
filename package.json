@@ -4,7 +4,7 @@
   "description": "package and deliver stream assets",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --timeout 10000"
   },
   "author": "Jeffrey Eggert",
   "license": "MIT",
@@ -14,5 +14,10 @@
   },
   "dependencies": {
     "node-media-server": "^2.1.9"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.0.1"
   }
 }
