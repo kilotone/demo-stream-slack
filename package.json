@@ -13,7 +13,6 @@
     "url": "https://github.com/kilotone/demo-stream-slack.git"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "node-media-server": "^2.1.9"
   }
 }
