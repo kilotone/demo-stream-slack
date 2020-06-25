@@ -17,3 +17,8 @@ then run 'yarn' to update package dependencies locally
 upgrade express to version 4.17.1 to fix (node:31212) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
 
 installed nodemon, use 'nodemon .\src\server.js --watch ..\nms\Node-Media-Server\' to run with the external tooling 
+
+##Usage:
+
+Written with nodejs14
+Use NPM install to install dependencies if copying source locally, and nodejs is installed otherwise use dockerfile.
