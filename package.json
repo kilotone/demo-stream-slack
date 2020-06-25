@@ -14,7 +14,7 @@
     "url": "https://github.com/kilotone/demo-stream-slack.git"
   },
   "dependencies": {
-    "node-media-server": "^2.1.9"
+    "node-media-server": "kilotone/Node-Media-Server#master"
   },
   "devDependencies": {
     "chai": "^4.2.0",
