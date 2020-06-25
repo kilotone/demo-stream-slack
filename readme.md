@@ -8,10 +8,12 @@ SET OPENSSL_CONF=pathToConf
 
 ## Forked Node-Media-Server
 
-used yarn to symlink the fork, naviate to fork in terminal and run 'yarn link node-media-server' 
+used yarn to symlink the fork, naviate to fork in terminal and run 'yarn link node-media-server'
 NOTE that creating/or changing branches locally brakes the symbolic links, it is possible to use npm link, instead of yarn link as well
 then run 'yarn' to update package dependencies locally
 
 'https://medium.com/@chrisdmasters/how-to-fork-a-dependency-and-use-it-locally-in-a-project-707c80d3449c'
 
 upgrade express to version 4.17.1 to fix (node:31212) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+
+installed nodemon, use 'nodemon .\src\server.js --watch ..\nms\Node-Media-Server\' to run with the external tooling 

@@ -26,22 +26,6 @@ describe("/GET Hello World and Date", () => {
   });
 });
 
-describe("/GET Hello World Redirect", () => {
-  it("it should Redirect via SSL", (done) => {
-    chai
-      .request("http://localhost:8000")
-      .get("/api/hello")
-      .redirects(1)
-      .end((err, res) => {
-        if (err) {
-          console.log(err); // outputs null
-        }
-        res.should.redirectTo("https://localhost:8443/api/hello");
-        res.should.have.redirect;
-        done();
-      });
-  });
-});
 
 describe("/GET Hello World Redirect", () => {
   it("it should Redirect via SSL", (done) => {
@@ -75,3 +59,34 @@ describe("/GET Should reject a specifed user agent", () => {
       });
   });
 });
+
+describe("/GET Should return a list of IP addresses", () => {
+  it("they should all be unique", (done) => {
+    chai
+      .request("https://localhost:8443")
+      .get("/api/scraper")
+      .auth("admin", "harley")
+      .end((err, res) => {
+        if (err) {
+          console.log(err); // outputs null
+        }
+        console.log('found')
+        done();
+      });
+  });
+});
+/*
+servers found : 1753
+
+Add below for ca validation if needed
+var req = https.request({ 
+  host: '192.168.1.1', 
+  port: 443,
+  path: '/',
+  ca: [fs.readFileSync([certificate path], {encoding: 'utf-8'})],
+  method: 'GET',
+  rejectUnauthorized: true,
+  requestCert: true,
+  agent: false
+},
+*/
