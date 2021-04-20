@@ -12,7 +12,6 @@ used yarn to symlink the fork, naviate to fork in terminal and run 'yarn link no
 NOTE that creating/or changing branches locally brakes the symbolic links, it is possible to use npm link, instead of yarn link as well
 then run 'yarn' to update package dependencies locally
 
-'https://medium.com/@chrisdmasters/how-to-fork-a-dependency-and-use-it-locally-in-a-project-707c80d3449c'
 
 upgrade express to version 4.17.1 to fix (node:31212) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
 
